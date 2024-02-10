@@ -1,0 +1,18 @@
+{
+  "name": "mern-blog",
+  "version": "1.0.0",
+  "description": "This project is a web application that allows users to write blogs based on their interests or differetn categories and share their thoughts to the world.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
