@@ -9,7 +9,7 @@ This code sets up the basic structure of a web page for a Blog Website, with inp
 
 ### Demo
 
-You can access the live demo of the project by clicking [here](url) .
+You can access the live demo of the project by clicking [here](url).
 
 ### Features
 
