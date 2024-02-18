@@ -13,7 +13,7 @@ export default function FooterCom() {
                         Blog
                     </Link>
                 </div>
-                <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3">
                     <div>
                         <Footer.Title title='about'/>
                         <Footer.LinkGroup col>
