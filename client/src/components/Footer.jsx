@@ -17,16 +17,16 @@ export default function FooterCom() {
                     <div>
                         <Footer.Title title='about'/>
                         <Footer.LinkGroup col>
-                           <Footer.Link href='http://www.100jsprojects.com' target='_blank' rel='noopener noreferrer'>
-                                100js projects
-                            </Footer.Link>
                             <Footer.Link href='/about' target='_blank' rel='noopener noreferrer'>
-                                boulevard Blog
+                                Boulevard Blog
+                            </Footer.Link>
+                            <Footer.Link href='/contact-me' target='_blank' rel='noopener noreferrer'>
+                                Contact
                             </Footer.Link>
                         </Footer.LinkGroup>
                     </div>
                     <div>
-                        <Footer.Title title='follow us'/>
+                        <Footer.Title title='follow me'/>
                         <Footer.LinkGroup col>
                            <Footer.Link href='https://github.com/arushi2207' target='_blank' rel='noopener noreferrer'>
                                 Github
@@ -36,26 +36,15 @@ export default function FooterCom() {
                             </Footer.Link>
                         </Footer.LinkGroup>
                     </div>
-                    <div>
-                        <Footer.Title title='legal'/>
-                        <Footer.LinkGroup col>
-                           <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
-                                Privacy Policy
-                            </Footer.Link>
-                            <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
-                                Terms &amp; Comditions
-                            </Footer.Link>
-                        </Footer.LinkGroup>
-                    </div>
                 </div>
             </div>
             <Footer.Divider/>
             <div className="w-full sm:flex sm:items-center sm:justify-between">
                 <Footer.Copyright href='#' by="Boulevard Blog" year={new Date().getFullYear()} />
                 <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-                    <Footer.Icon href='#' icon={BsFacebook} />
-                    <Footer.Icon href='#' icon={BsInstagram} />
-                    <Footer.Icon href='#' icon={BsTwitter} />
+                    <Footer.Icon href='https://www.facebook.com/login/' icon={BsFacebook} />
+                    <Footer.Icon href='https://www.instagram.com/accounts/login/?hl=en' icon={BsInstagram} />
+                    <Footer.Icon href='https://twitter.com/i/flow/login' icon={BsTwitter} />
                     <Footer.Icon href='https://github.com/arushi2207' icon={BsGithub} />
                     <Footer.Icon href='https://www.linkedin.com/in/arushi-srivastava-21171b270' icon={BsLinkedin} />
                 </div>

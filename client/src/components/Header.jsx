@@ -1,9 +1,7 @@
-// import React from 'react'
-
 import { Avatar, Button, Dropdown, Navbar, TextInput } from "flowbite-react";
 import { Link , useLocation, useNavigate} from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai"
-import { FaMoon } from "react-icons/fa"
+import { FaMoon, FaSun } from "react-icons/fa"
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from "../redux/user/userSlice";
@@ -15,7 +13,7 @@ export default function Header() {
   const location = useLocation();
   const navigate = useNavigate();
   const {currentUser} = useSelector(state => state.user);
-  // const { theme } = useSelector((state) => state.theme);
+  const { theme } = useSelector((state) => state.theme);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -76,7 +74,7 @@ export default function Header() {
           pill
           onClick={()=>dispatch(toggleTheme())}
         >
-          <FaMoon/>
+          {theme === 'light' ? <FaSun/> : <FaMoon/>}
         </Button>
         {currentUser ? (
           <Dropdown
@@ -120,9 +118,9 @@ export default function Header() {
             About
           </Link>
         </Navbar.Link>
-        <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link to="/projects">
-            Projects
+        <Navbar.Link active={path === "/contact-me"} as={"div"}>
+          <Link to="/contact-me">
+            Contact
           </Link>
         </Navbar.Link>
       </Navbar.Collapse>
