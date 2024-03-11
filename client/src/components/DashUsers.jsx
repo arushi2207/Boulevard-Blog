@@ -2,7 +2,6 @@ import { Button, Modal, Table } from 'flowbite-react';
 import { useEffect, useState } from "react";
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
 import { useSelector } from 'react-redux';
-import {FaCheck, FaTimes} from 'react-icons/fa'
 
 export default function DashUsers() {
   const { currentUser } = useSelector((state) => state.user);
@@ -73,7 +72,6 @@ export default function DashUsers() {
               <Table.HeadCell>User image</Table.HeadCell>
               <Table.HeadCell>Username</Table.HeadCell>
               <Table.HeadCell>Email</Table.HeadCell>
-              <Table.HeadCell>Admin</Table.HeadCell>
               <Table.HeadCell>Delete</Table.HeadCell>
             </Table.Head>
             {users.map((user) => (
@@ -90,12 +88,15 @@ export default function DashUsers() {
                     </Table.Cell>
                     <Table.Cell>{user.username}</Table.Cell>
                     <Table.Cell>{user.email}</Table.Cell>
-                    <Table.Cell>{user.isAdmin ? (<FaCheck className='text-green-500'/>): (<FaTimes className='text-red-500'/>) }</Table.Cell>
                     <Table.Cell>
-                      <span className='font-medium text-red-500 hover:underline cursor-pointer' onClick={()=>{
-                         setShowModal(true);
-                         setUserIdToDelete(user._id);
-                      }}>Delete</span>
+                      {!user.isAdmin ? (
+                        <span className='font-medium text-red-600 hover:underline cursor-pointer' onClick={()=>{
+                           setShowModal(true);
+                           setUserIdToDelete(user._id);
+                        }}>Delete</span>
+                      ) : (
+                        <span className='font-medium text-green-500'>Admin</span>
+                      )}
                     </Table.Cell>
                   </Table.Row>
                 </Table.Body>

@@ -132,10 +132,12 @@ export default function Search() {
               value={sidebarData.category}
               id='category'
             >
-              <option value='uncategorized'>Uncategorized</option>
-              <option value='reactjs'>React.js</option>
-              <option value='nextjs'>Next.js</option>
-              <option value='javascript'>JavaScript</option>
+              <option value='uncategorized'>uncategorized</option>
+              <option value='lifestyle'>Lifestyle</option>
+              <option value='travel'>Travel and Adventure</option>
+              <option value='technology'>Technology and Innovation</option>
+              <option value='cooking'>Food and Cooking</option>
+              <option value='finance'>Personal Finance and Money Management</option>
             </Select>
           </div>
           <Button type='submit' outline gradientDuoTone='purpleToPink'>

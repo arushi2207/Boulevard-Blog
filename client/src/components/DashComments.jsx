@@ -2,7 +2,6 @@ import { Button, Modal, Table } from 'flowbite-react';
 import { useEffect, useState } from "react";
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
 import { useSelector } from 'react-redux';
-import {FaCheck, FaTimes} from 'react-icons/fa'
 
 export default function DashComments() {
   const { currentUser } = useSelector((state) => state.user);
@@ -79,7 +78,7 @@ export default function DashComments() {
           <Table hoverable className='shadow-md'>
             <Table.Head>
               <Table.HeadCell>Date updated</Table.HeadCell>
-              <Table.HeadCell>Comment content</Table.HeadCell>
+              <Table.HeadCell>Comment</Table.HeadCell>
               <Table.HeadCell>Number of likes</Table.HeadCell>
               <Table.HeadCell>PostId</Table.HeadCell>
               <Table.HeadCell>UserId</Table.HeadCell>
@@ -92,7 +91,7 @@ export default function DashComments() {
                     {new Date(comment.updatedAt).toLocaleDateString()}
                   </Table.Cell>
                   <Table.Cell>{comment.content}</Table.Cell>
-                  <Table.Cell>{comment.numberOfLikes}</Table.Cell>
+                  <Table.Cell className='text-center'>{comment.numberOfLikes}</Table.Cell>
                   <Table.Cell>{comment.postId}</Table.Cell>
                   <Table.Cell>{comment.userId}</Table.Cell>
                   <Table.Cell>

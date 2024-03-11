@@ -17,10 +17,10 @@ export default function FooterCom() {
                     <div>
                         <Footer.Title title='about'/>
                         <Footer.LinkGroup col>
-                            <Footer.Link href='/about' target='_blank' rel='noopener noreferrer'>
+                            <Footer.Link href='/about' rel='noopener noreferrer'>
                                 Boulevard Blog
                             </Footer.Link>
-                            <Footer.Link href='/contact-me' target='_blank' rel='noopener noreferrer'>
+                            <Footer.Link href='/contact-me' rel='noopener noreferrer'>
                                 Contact
                             </Footer.Link>
                         </Footer.LinkGroup>
