@@ -42,11 +42,11 @@ export default function FooterCom() {
             <div className="w-full sm:flex sm:items-center sm:justify-between">
                 <Footer.Copyright href='#' by="Boulevard Blog" year={new Date().getFullYear()} />
                 <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-                    <Footer.Icon href='https://www.facebook.com/login/' icon={BsFacebook} />
-                    <Footer.Icon href='https://www.instagram.com/accounts/login/?hl=en' icon={BsInstagram} />
-                    <Footer.Icon href='https://twitter.com/i/flow/login' icon={BsTwitter} />
-                    <Footer.Icon href='https://github.com/arushi2207' icon={BsGithub} />
-                    <Footer.Icon href='https://www.linkedin.com/in/arushi-srivastava-21171b270' icon={BsLinkedin} />
+                    <Footer.Icon href='https://www.facebook.com/login/' target='_blank' icon={BsFacebook} />
+                    <Footer.Icon href='https://www.instagram.com/accounts/login/?hl=en' target='_blank' icon={BsInstagram} />
+                    <Footer.Icon href='https://twitter.com/i/flow/login' target='_blank' icon={BsTwitter} />
+                    <Footer.Icon href='https://github.com/arushi2207' target='_blank' icon={BsGithub} />
+                    <Footer.Icon href='https://www.linkedin.com/in/arushi-srivastava-21171b270' target='_blank' icon={BsLinkedin} />
                 </div>
             </div>
         </div>
