@@ -1,7 +1,7 @@
 {
   "name": "mern-blog",
   "version": "1.0.0",
-  "description": "This project is a web application that allows users to write blogs based on their interests or differetn categories and share their thoughts to the world.",
+  "description": "This project is a web application that allows the admin to write blogs based on their interests or differetn categories and share their thoughts to the world.",
   "type": "module",
   "main": "index.js",
   "scripts": {
